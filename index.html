@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airu</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <canvas id="pet-canvas" width="128" height="128"></canvas>
+    <div id="chat-bubble" class="hidden"></div>
+    <div id="chat-input-container" class="hidden">
+      <input id="chat-input" type="text" placeholder="和艾露猫说点什么..." />
+    </div>
+    <div id="settings-overlay" class="hidden">
+      <div class="settings-panel">
+        <h3>Settings</h3>
+        <label>DeepSeek API Key</label>
+        <input id="api-key-input" type="password" placeholder="sk-..." />
+        <button id="save-settings-btn">Save</button>
+        <button id="close-settings-btn">Cancel</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

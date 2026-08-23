@@ -1,0 +1,32 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nicegram/nicegram-ios/refs/heads/develop/nicegram-assistant/nicegram-assistant-appclip/nicegram-assistant-appclip/Preview%20Content/tauri.conf.json",
+  "productName": "Airu",
+  "version": "0.1.0",
+  "identifier": "com.tinyalmond.airu",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "label": "main",
+        "title": "Airu",
+        "width": 250,
+        "height": 300,
+        "decorations": false,
+        "transparent": true,
+        "alwaysOnTop": true,
+        "skipTaskbar": true,
+        "resizable": false
+      }
+    ],
+    "security": {
+      "csp": null
+    },
+    "macOSPrivateApi": true
+  }
+}

@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+target/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Environment
+.env
+*.pem
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tauri
+src-tauri/gen/
