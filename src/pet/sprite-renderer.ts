@@ -13,7 +13,7 @@ export class SpriteRenderer {
     this.sprites = sprites;
   }
 
-  constructor(canvas: HTMLCanvasElement, sprites: SpriteDefs, scale = 2) {
+  constructor(canvas: HTMLCanvasElement, sprites: SpriteDefs, scale = 3) {
     this.canvas = canvas;
     this.ctx = canvas.getContext("2d")!;
     this.sprites = sprites;
