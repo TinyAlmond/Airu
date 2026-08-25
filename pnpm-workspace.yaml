@@ -1,2 +1,5 @@
+packages:
+  - '.'
+  - 'dsh-plugin-airu'
 allowBuilds:
   esbuild: true
